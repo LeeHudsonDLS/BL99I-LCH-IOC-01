@@ -11,7 +11,10 @@ include $(TOP)/configure/CONFIG
 # In a Diamond Support Module, install
 # templates like this
 #
-#DB += motor.template
+#DB += motorTest.db
+DB += calcTest.db
+DB += seqTest.db
+DB += feTest.db
 #DB += basic_motor.template
 
 #----------------------------------------------------

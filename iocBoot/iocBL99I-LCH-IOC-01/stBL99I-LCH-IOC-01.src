@@ -20,8 +20,10 @@ $(VXWORKS_ONLY)ld < bin/$(ARCH)/BL99I-LCH-IOC-01.munch
 dbLoadDatabase("dbd/BL99I-LCH-IOC-01.dbd")
 BL99I_LCH_IOC_01_registerRecordDeviceDriver(pdbbase)
 
-## Load record instances
-#dbLoadRecords("db/<filename>.db","<List of macros, e.g. user=xxx>")
+
+
+#dbLoadRecords("db/calcTest.db")
+dbLoadRecords("db/feTest.db")
 
 ## Set this to see messages from mySub
 #mySubDebug 1

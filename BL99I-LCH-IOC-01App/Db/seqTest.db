@@ -1,0 +1,58 @@
+record(ai, "BL99I-LCH-PIRG-01:GOODP:A")
+{
+  field(VAL, "0")
+}
+
+record(calc, "BL99I-LCH-PIRG-01:GOODP") 
+{
+  field(DESC, "Valid pressure calc")
+  field(INPA, "BL99I-LCH-PIRG-01:GOODP:A CP")
+  field(CALC, "(A>0)?0:1")
+}
+
+record(seq, "BL99I-LCH-PIRG-01:PSEQ") 
+{
+  field(DESC, "Seq Pressure & Status")
+  field(SELM, "Specified")
+  field(SELL, "BL99I-LCH-PIRG-01:GOODP CP")
+  field(DOL1, "6")
+  field(LNK1, "BL99I-LCH-PIRG-01:STA PP")
+}
+
+record(mbbi, "BL99I-LCH-PIRG-01:STA") {
+  field(DTYP, "Soft Channel")
+  field(DESC, "Status")
+  field(ZRST, "OK")
+  field(ONST, "OK")
+  field(TWST, "Above Range")
+  field(THST, "At Atmosphere")
+  field(FRST, "Low Emission")
+  field(FVST, "Filament Off")
+  field(SXST, "HV Off")
+  field(SVST, "Startup Delay")
+  field(EIST, "Below Range")
+  field(NIST, "Controlled")
+  field(TEST, "Protected State")
+  field(ELST, "No Gauge")
+  field(TVST, "Not Connected")
+  field(TTST, "Wrong Gauge")
+  field(FTST, "Bad Command")
+  field(FFST, "Locked Out")
+  field(UNSV, "MAJOR")
+  field(ZRSV, "NO_ALARM")
+  field(ONSV, "NO_ALARM")
+  field(TWSV, "MINOR")
+  field(THSV, "MINOR")
+  field(FRSV, "MAJOR")
+  field(FVSV, "MAJOR")
+  field(SXSV, "MAJOR")
+  field(SVSV, "MINOR")
+  field(EISV, "NO_ALARM")
+  field(NISV, "MINOR")
+  field(TESV, "MINOR")
+  field(ELSV, "MAJOR")
+  field(TVSV, "MAJOR")
+  field(TTSV, "MAJOR")
+  field(FTSV, "MAJOR")
+  field(FFSV, "MAJOR")
+}
