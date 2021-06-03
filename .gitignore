@@ -1,6 +1,11 @@
+*~
+O.*
 bin
-data
-db
 dbd
-include
+db
+data
 lib
+.svn*
+iocs/*IOC*
+.idea
+
